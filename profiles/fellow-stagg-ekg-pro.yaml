@@ -1,0 +1,45 @@
+name: fellow-stagg-ekg-pro
+components:
+  - id: main
+    capabilities:
+      - id: switch
+        version: 1
+      - id: temperatureMeasurement
+        version: 1
+      - id: thermostatHeatingSetpoint
+        version: 1
+      - id: thermostatOperatingState
+        version: 1
+      - id: temperatureAlarm
+        version: 1
+      - id: refresh
+        version: 1
+    categories:
+      - name: WaterHeater
+preferences:
+  - title: "IP Address de la Tetera"
+    name: ipAddress
+    description: "IP local de la Fellow Stagg EKG Pro. Ej: 192.168.1.100"
+    required: true
+    preferenceType: string
+    definition:
+      minLength: 7
+      maxLength: 15
+      stringType: text
+      default: "192.168.1.100"
+  - title: "Intervalo de consulta (seg)"
+    name: pollInterval
+    description: "Cada cuantos segundos revisa el estado (10-300)"
+    required: false
+    preferenceType: integer
+    definition:
+      minimum: 10
+      maximum: 300
+      default: 10
+  - title: "Alerta al llegar a temperatura"
+    name: alertOnReach
+    description: "Notifica cuando la tetera alcanza la temperatura objetivo"
+    required: false
+    preferenceType: boolean
+    definition:
+      default: true

@@ -1,0 +1,7 @@
+name: fellow-stagg-ekg-pro
+packageKey: fellow-stagg-ekg-pro
+description: "SmartThings Edge Driver para la tetera Fellow Stagg EKG Pro via HTTP local"
+vendorSupportInformation: "https://fellowproducts.com"
+permissions:
+  lan: {}
+  discovery: {}

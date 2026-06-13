@@ -1,0 +1,18 @@
+# SmartThings packaged drivers
+*.zip
+*.enc
+
+# Logs
+*.log
+*.output
+
+# OS / editor
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# Local notes (keep personal hub/account IDs out of the repo)
+DEPLOYMENT.md
+deployment.local.md
+*.local.*
